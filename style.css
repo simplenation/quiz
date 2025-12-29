@@ -19,7 +19,7 @@ main{
     padding-top: 2%;
     border-radius: 8px;
     box-shadow: 5px 5px 10px;
-    border: solid 2px red;
+    /* border: solid 2px red; */
 }
 input{
     height: 10%;
