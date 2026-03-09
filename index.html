@@ -3,95 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Set's Quiz</title>
+    <link rel="stylesheet" href=".//style.css">
 </head>
 <body>
+
     <main>
-        <div id="dre">
-            <label for=""> Name</label><br>
-            <input type="text" id="name" placeholder="enter your name" autocomplete="off"><br><br>
 
-            <label for="">Age</label><br>
-            <input type="number" id="age" placeholder="enter your Age" autocomplete="off"><br><br>
+        <form action="" id="form">
+            <input type="text" placeholder="Name" autocomplete="off" id="username">
+            <select name="" id="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
 
-            <label for="">Gender</label><br>
-            <select  id="Gender">
-                <option>Male</option>
-                <option>Female</option>
-            </select><br><br>
-                                          
+            <button id="login">Start Quiz</button>
+        </form>
 
-            <button id="logn">Log in</button>
-
-        </div>
         <div id="q1">
-           <p>1. who is the current president of Nigeria ?</p>
-           <input type="text" id="q1ans" disabled> <br><br>
+            <p>1. What is the S.I unit of power?</p>
 
-           <li onclick="q1a()"> a. Murtola Muhammad </li>
-           <li onclick="q1b()"> b. Olusegun Obasanjo </li>
-           <li onclick="q1c()"> c. Bola Ahmed Tinibu </li>
-           <li onclick="q1d()"> d. Peter Obi</li>
+            <input type="text" disabled id="q1ans">
 
-           <button onclick="next1()">Next</button>
+            <li onclick="q1a()">Joules</li>
+            <li onclick="q1b()">Watts</li>
+            <li onclick="q1c()">Amps</li>
+
+            <button onclick="nxt1()">Next</button>
         </div>
 
         <div id="q2">
-            <p>2. which of these is not a programming language ?</p>
-            <input type="text" id="q2ans" disabled><br><br>
+            <p>2. What is the capital of Hawaii?</p>
 
-            <li onclick="q2a()">a. Javascript</li>
-            <li onclick="q2b()">b. CSS</li>
-            <li onclick="q2c()">c. PHP</li>
-            <li onclick="q2d()">d. Java</li>
+            <input type="text" disabled id="q2ans">
 
-            <button onclick="next2()">Next</button>
+            <li onclick="q2a()">Ohio</li>
+            <li onclick="q2b()">Honolulu</li>
+            <li onclick="q2c()">Texas</li>
+
             <button onclick="prev2()">Previous</button>
+            <button onclick="nxt2()">Next</button>
         </div>
 
         <div id="q3">
-             <p>3. What colour combination gives you 'Orange' colour</p>
-             <input type="text" id="q3ans" disabled><br><br>
+            <p>3. What is the final stage of a caterpillar?</p>
 
-             <li onclick="q3a()">a. Red and Green</li>
-             <li onclick="q3b()">b. Yellow and Purple</li>
-             <li onclick="q3c()">c. Gold and Red</li>
-             <li onclick="q3d()">d. Yellow and Red</li>
+            <input type="text" disabled id="q3ans">
 
-             <button onclick="next3()">Next</button>
-             <button onclick="prev3()">previous</button>
+            <li onclick="q3a()">Centipede</li>
+            <li onclick="q3b()">Butterfly</li>
+            <li onclick="q3c()">Moth</li>
+
+            <button onclick="prev3()">Previous</button>
+            <button onclick="nxt3()">Next</button>
         </div>
 
         <div id="q4">
-            <p>4. A man is twice the age of his son. If the man`s age is currently 30, how old will he be when his son turns 18</p>
-            <input type="text" id="q4ans" disabled> <br><br>
+            <p>4. Which of these is one of the Seven wonders of the world?</p>
 
-            <li onclick="q4a()">a. 57</li>
-            <li onclick="q4b()">b. 60</li>
-            <li onclick="q4c()">c. 33</li>
-            <li onclick="q4d()">d. 48</li>
+            <input type="text" disabled id="q4ans">
 
-            <button onclick="next4()">Next</button>
+            <li onclick="q4a()">Zuma Rock</li>
+            <li onclick="q4b()">Pyramid of Giza</li>
+            <li onclick="q4c()">Burj Khalifa</li>
+
             <button onclick="prev4()">Previous</button>
+            <button onclick="nxt4()">Next</button>
         </div>
 
         <div id="q5">
-            <p>5. In Web Development, What those the term 'CSS' stands for</p>
-            <input type="text" id="q5ans" disabled> <br><br>
+            <p>5. Which of these is NOT a prime number?</p>
 
-            <li onclick="q5a()">a. Cascade Style Sheet</li>
-            <li onclick="q5b()">b. Casacading Style Sheet</li>
-            <li onclick="q5c()">c. Cascade Styling Sheet</li>
-            <li onclick="q5d()">d. Cascading Style Sheet</li>
+            <input type="text" disabled id="q5ans">
+
+            <li onclick="q5a()">6</li>
+            <li onclick="q5b()">17</li>
+            <li onclick="q5c()">7</li>
 
             <button onclick="prev5()">Previous</button>
-            <button id="submit">Submit</button>
+            <button onclick="nxt5()">Next</button>
         </div>
-        <h1 id="result">IDYYGDUHSVDY</h1>
+
+        <div id="q6">
+            <p>6. Which of these is not a primary color?</p>
+
+            <input type="text" disabled id="q6ans">
+
+            <li onclick="q6a()">Green</li>
+            <li onclick="q6b()">Red</li>
+            <li onclick="q6c()">Blue</li>
+
+            <button onclick="prev6()">Previous</button>
+            <button onclick="nxt6()">Next</button>
+        </div>
+
+        <div id="q7">
+            <p>7. Where does the sun set?</p>
+
+            <input type="text" disabled id="q7ans">
+
+            <li onclick="q7a()">South</li>
+            <li onclick="q7b()">West</li>
+            <li onclick="q7c()">East</li>
+
+            <button onclick="prev7()">Previous</button>
+            <button onclick="nxt7()">Next</button>
+        </div>
+
+        <div id="q8">
+            <p>8. A man is Thrice the age of his son. If his son is currently 15 years old, how old will the man be when the son turns 18?</p>
+
+            <input type="text" disabled id="q8ans">
+
+            <li onclick="q8a()">45</li>
+            <li onclick="q8b()">54</li>
+            <li onclick="q8c()">57</li>
+
+            <button onclick="prev8()">Previous</button>
+            <button onclick="nxt8()">Next</button>
+        </div>
+
+
+        <div id="q9">
+            <p>9. How many states make up the United States of America?</p>
+
+            <input type="text" disabled id="q9ans">
+
+            <li onclick="q9a()">50</li>
+            <li onclick="q9b()">38</li>
+            <li onclick="q9c()">49</li>
+
+            <button onclick="prev9()">Previous</button>
+            <button onclick="nxt9()">Next</button>
+        </div>
+
+        <div id="q10">
+            <p>10. Where is the deepest part of the ocean located?</p>
+
+            <input type="text" disabled id="q10ans">
+
+            <li onclick="q10a()">Bermuda Triangle</li>
+            <li onclick="q10b()">Mariana Trench</li>
+            <li onclick="q10c()">Mississippi</li>
+
+            <button onclick="prev10()">Previous</button>
+            <button id="submit" onclick="submit()">Submit</button>
+        </div>
+
+        <h2 id="result"></h2>
     </main>
 
-
-   <script src="./script.js"></script> 
+    <script src="./set.js"></script>
 </body>
 </html>
